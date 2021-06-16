@@ -1,0 +1,87 @@
+body{
+  background: rgb(219,219,219);
+  background: linear-gradient(90deg, rgba(219,219,219,1) 0%, rgba(255,255,255,1) 49%, rgba(210,210,210,1) 100%);
+}
+img{
+  width: 100%;
+  vertical-align: middle;
+}
+
+.l-wrapper{
+  width: 100%;
+  
+}
+.container{
+  display: flex;
+  margin: auto;
+  flex-wrap: wrap;
+  max-width: 960px;
+  height: 960px;
+  justify-content: center;
+}
+h1{
+  width:100%;
+  max-width: 700px;
+  text-align: center;
+  align-self: center;
+  font-size: 40px;
+  color: #aaaaaa;
+  background: #FFF;
+  box-shadow: .5px .5px 2.5px .2px #e9e9e9;
+}
+
+.item{
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 320px;
+  height: 400px;
+  background: #fff;
+  border-radius:15px ;
+  box-shadow: .5px .5px 2.5px .2px #e9e9e9;
+}
+
+.item__pic {
+  width: 100%;
+  height: 220px;
+}
+
+.item__txt {
+  margin:15px 20px;
+}
+
+.item__txt h2,.item__txt p {
+  border-radius:20px;
+}
+
+
+
+
+.isLoading{
+  min-height: 18px;
+  background: #d9d9d9;
+  position: relative;
+  overflow: hidden;
+}
+
+h2.isLoading{
+  width: 140px;
+  min-height: 19px;
+}
+
+.isLoading::before{
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: block;
+  background: linear-gradient(to left ,transparent , rgba(228, 228, 228, 0.979),transparent);
+  transform: translate(-100%);
+  animation: loading 1.5s infinite ;
+}
+@keyframes loading {
+  100% {
+    transform: translate(100%);
+  }
+}
