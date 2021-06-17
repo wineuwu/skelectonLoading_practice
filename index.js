@@ -6,8 +6,6 @@ document.addEventListener('DOMContentLoaded',async() => {
   if(status === 200){
     insertContent(res,status)
   }
-  
-  
   setTimeout(fakeDataLoading(),5000)
 })
 const img = document.querySelector('.item__pic');
